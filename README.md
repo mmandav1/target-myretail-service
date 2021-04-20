@@ -1,4 +1,4 @@
-# target-myretail-service
+# myRetail Restful Service
 
 ## What's inside 
 This project is based on the [Spring Boot](http://projects.spring.io/spring-boot/) project and uses the below tech stack :
@@ -38,3 +38,5 @@ Running the project locally assumes that `java` and `MongoDB` are installed loca
 After application is started open the following into any browser [http://localhost:9000/api/swagger-ui.html](http://localhost:9000/api/swagger-ui.html)
 
 Application also provides `REST` API's for  fetching product details for the given product id and for updating the product details.
+
+
