@@ -22,7 +22,8 @@ To build, or run project Java and MongoDB should be installed.
 ## How to build project
 
 The project is created with Maven, so you just need to import it to your IDE and build the project to resolve the dependencies.
-You can use the below command if you want to build the project without sing any IDE.
+You can use the below command if you want to build the project without using any IDE.
+
 mvn clean install
 
 

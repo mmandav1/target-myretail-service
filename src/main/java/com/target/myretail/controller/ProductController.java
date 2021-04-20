@@ -107,20 +107,6 @@ public class ProductController {
 		return new ResponseEntity<>(newProduct, HttpStatus.OK);
 	}
 	
-	@RequestMapping(value = "/{id}", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-	@ApiOperation(value = "Create a new Product")
-	public ResponseEntity<Product> createProductPrice(
-			@PathVariable(value = "id", required = true) String id, @RequestBody Product product) throws Exception{
-		logger.info("In create product price method.");
-		try {
-			 productService.createProduct(id, product);
-		} catch (Exception e) {
-			logger.error("Exception occurred while creating product price.", e);
-			throw e;
-		}
-		return new ResponseEntity<>(HttpStatus.CREATED);
-	}
-	
 	private Map<String, String> getProductNames() {
 		Map<String, String> namesMap = new HashMap<>();
 		String productInfo1 = "{\"product\": {\"item\": {\"product_description\": {\"title\": \"iPhone X 64GB - Space Gray\"}}}}";

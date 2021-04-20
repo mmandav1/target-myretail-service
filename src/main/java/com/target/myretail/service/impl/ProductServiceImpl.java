@@ -77,9 +77,4 @@ public class ProductServiceImpl implements ProductService {
 		return productRepository.updatePriceById(id, price, currencyCode);
 	}
 
-	@Override
-	public void createProduct(String id, Product product) {
-		productRepository.createProduct(id, product);
-	}
-
 }

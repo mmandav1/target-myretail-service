@@ -19,11 +19,5 @@ public interface ProductService {
 	 * @return Product
 	 */
 	public Product updateProduct(String id, Product product);
-	
-	/**
-	 * @param id
-	 * @param Product
-	 * @return Product
-	 */
-	public void createProduct(String id, Product product);
+
 }

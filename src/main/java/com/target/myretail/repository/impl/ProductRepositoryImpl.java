@@ -75,9 +75,4 @@ public class ProductRepositoryImpl implements ProductRepository {
 		return updatedProduct;
 	}
 
-	@Override
-	public void createProduct(String id, Product product) {
-		mongoTemplate.save(product,collectionName);	
-	}
-
 }

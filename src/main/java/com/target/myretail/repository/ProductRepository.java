@@ -17,11 +17,4 @@ public interface ProductRepository {
 	 */
 	public Product updatePriceById(String id, String price, String currencyCode);
 	
-	
-	/**
-	 * @param id
-	 * @param Product
-	 * @return Product
-	 */
-	public void createProduct(String id, Product product);
 }
